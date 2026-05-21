@@ -3,157 +3,177 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Expo Website Demo Pack</title>
+    <title>Grounds Studio | Strategy and Design</title>
     <meta
       name="description"
-      content="Five realistic sample websites for small and medium businesses."
+      content="Grounds Studio creates strategy, identity, and website design for brands that mean it."
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
-  <body class="launcher-page">
-    <header class="site-shell launcher-hero">
-      <nav class="topbar" aria-label="Main navigation">
-        <a class="brand-mark" href="index.html" aria-label="Expo demo pack home">
-          <span class="brand-icon">W</span>
-          <span>Website Demo Pack</span>
+  <body class="grounds-page">
+    <header class="grounds-hero-wrap">
+      <nav class="site-shell topbar grounds-nav" aria-label="Grounds Studio navigation">
+        <a class="grounds-nav-logo" href="index.html" aria-label="Grounds Studio home">
+          <img
+            class="grounds-nav-logo-image"
+            src="assets/grounds-studio-logo.png"
+            alt="Grounds Studio"
+          />
         </a>
         <div class="nav-links">
-          <a href="#demos">Demos</a>
-          <a href="#how-to-present">How to Present</a>
-          <a href="#customize">Customize</a>
+          <a href="#portfolio">Work</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
 
-      <section class="launcher-intro">
-        <p class="eyebrow">Business Expo Ready</p>
-        <h1>Five realistic sample websites your friend can show tomorrow.</h1>
-        <p>
-          These are clickable, polished demo pages for common small-business
-          clients. Open one, swap the story to match the prospect, and help them
-          imagine their own website generating bookings, quote requests,
-          inquiries, and visits.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#demos">View Demo Websites</a>
-          <a class="button ghost" href="#how-to-present">Presentation Script</a>
+      <section class="site-shell grounds-hero">
+        <div class="grounds-hero-copy reveal">
+          <div class="grounds-logo-lockup">
+            <img
+              class="grounds-logo-image"
+              src="assets/grounds-studio-logo.png"
+              alt="Grounds Studio"
+            />
+          </div>
+          <p class="grounds-tagline">Strategy and design for brands that mean it.</p>
+          <div class="grounds-cta-row" aria-label="Primary actions">
+            <a class="button primary grounds-primary" href="#portfolio">See Our Work</a>
+            <a class="button ghost grounds-secondary" href="#contact">Get in Touch</a>
+          </div>
         </div>
+
+        <aside class="grounds-hero-panel reveal" aria-label="Studio positioning">
+          <p class="eyebrow">Brand Direction / Web Design / Launch Systems</p>
+          <h1>Make the first impression feel intentional.</h1>
+          <p>
+            Grounds Studio helps founders and small teams shape the strategy,
+            visuals, and web presence they need to look credible, clear, and
+            ready for real customers.
+          </p>
+          <div class="grounds-proof-row">
+            <span>Identity</span>
+            <span>Websites</span>
+            <span>Pitch Assets</span>
+          </div>
+        </aside>
       </section>
     </header>
 
     <main>
-      <section class="site-shell section-block" id="demos">
+      <section class="site-shell grounds-strip" aria-label="Studio promise">
+        <span>Clear strategy</span>
+        <span>Distinct visuals</span>
+        <span>Conversion-ready pages</span>
+        <span>Practical launch assets</span>
+      </section>
+
+      <section class="site-shell section-block grounds-section" id="portfolio">
         <div class="section-heading narrow">
-          <p class="eyebrow">The Demo Set</p>
-          <h2>Choose the closest business type, then personalize the pitch.</h2>
+          <p class="eyebrow">Selected Work</p>
+          <h2>Sample directions clients can understand in seconds.</h2>
+          <p>
+            These demo websites show how Grounds Studio can adapt strategy,
+            copy, structure, and visual direction for different business types.
+          </p>
         </div>
 
-        <div class="demo-grid">
-          <article class="demo-card restaurant-accent">
-            <div class="card-topline">Restaurant / Cafe</div>
+        <div class="grounds-work-grid">
+          <article class="grounds-work-card work-cafe">
+            <span>Restaurant / Cafe</span>
             <h3>Ember &amp; Grain Cafe</h3>
-            <p>
-              A warm cafe website with menu highlights, table reservations,
-              pickup ordering, reviews, and location details.
-            </p>
-            <a class="button small" href="restaurant.html">Open Cafe Demo</a>
+            <p>A cozy rustic cafe website built around atmosphere, menu interest, and reservations.</p>
+            <a href="restaurant.html">View Project</a>
           </article>
 
-          <article class="demo-card construction-accent">
-            <div class="card-topline">Construction / Contractor</div>
+          <article class="grounds-work-card work-build">
+            <span>Construction</span>
             <h3>Stonebridge Build Co.</h3>
-            <p>
-              A contractor site built around credibility, before-and-after
-              projects, services, process, and quote requests.
-            </p>
-            <a class="button small" href="construction.html">Open Contractor Demo</a>
+            <p>A contractor website focused on trust, project proof, and quote requests.</p>
+            <a href="construction.html">View Project</a>
           </article>
 
-          <article class="demo-card retail-accent">
-            <div class="card-topline">Retail / Product Catalog</div>
+          <article class="grounds-work-card work-retail">
+            <span>Retail Catalog</span>
             <h3>Harbor Lane Home Goods</h3>
-            <p>
-              A catalog-style retail website with collections, featured
-              products, availability, store details, and inquiry CTAs.
-            </p>
-            <a class="button small" href="retail.html">Open Retail Demo</a>
+            <p>A product-led retail site for browsing, store visits, and item inquiries.</p>
+            <a href="retail.html">View Project</a>
           </article>
 
-          <article class="demo-card clinic-accent">
-            <div class="card-topline">Clinic / Dental / Wellness</div>
-            <h3>BrightPath Dental &amp; Wellness</h3>
-            <p>
-              A trust-building clinic site with service explanations, doctor
-              profiles, new-patient info, and appointment booking.
-            </p>
-            <a class="button small" href="clinic.html">Open Clinic Demo</a>
+          <article class="grounds-work-card work-clinic">
+            <span>Clinic / Wellness</span>
+            <h3>BrightPath Dental</h3>
+            <p>A calm clinic website that explains services and makes booking feel easy.</p>
+            <a href="clinic.html">View Project</a>
           </article>
 
-          <article class="demo-card professional-accent">
-            <div class="card-topline">Professional Services</div>
+          <article class="grounds-work-card work-pro">
+            <span>Professional Services</span>
             <h3>LedgerPoint Advisory</h3>
-            <p>
-              A polished advisory website for accounting, consulting, training,
-              or B2B services with booking and resources.
-            </p>
-            <a class="button small" href="professional.html">Open Services Demo</a>
+            <p>A sharp advisory site that turns expertise into consultation-ready offers.</p>
+            <a href="professional.html">View Project</a>
           </article>
         </div>
       </section>
 
-      <section class="site-shell split-panel" id="how-to-present">
+      <section class="site-shell grounds-services" id="services">
         <div>
-          <p class="eyebrow">Recommended Order</p>
-          <h2>Start visual, then move toward trust-heavy services.</h2>
-          <ol class="clean-list">
-            <li>Restaurant or cafe: easy to understand and visually appealing.</li>
-            <li>Construction: project galleries make the value obvious.</li>
-            <li>Clinic or wellness: shows trust, service clarity, and booking.</li>
-            <li>Retail catalog: shows browsing, inquiries, and future e-commerce.</li>
-            <li>Professional services: best once they understand the lead-generation pattern.</li>
-          </ol>
+          <p class="eyebrow">What We Build</p>
+          <h2>Brand systems that are clear enough to use, not just nice to look at.</h2>
         </div>
-        <div class="script-card">
-          <p class="eyebrow">Simple Script</p>
-          <blockquote>
-            "These are sample websites built around common business types. They
-            show how a website can bring in bookings, quote requests, visits,
-            product inquiries, or consultations. If you imagine your logo,
-            photos, services, and reviews in this layout, we can customize one
-            for your business."
-          </blockquote>
+        <div class="grounds-service-list">
+          <article>
+            <span>01</span>
+            <h3>Strategy</h3>
+            <p>Positioning, audience clarity, offer structure, messaging, and launch priorities.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Identity</h3>
+            <p>Logo direction, color systems, typography, art direction, and brand guidelines.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Web Presence</h3>
+            <p>Landing pages, portfolio sites, service pages, copy structure, and conversion flows.</p>
+          </article>
         </div>
       </section>
 
-      <section class="site-shell section-block" id="customize">
-        <div class="section-heading narrow">
-          <p class="eyebrow">Customization Approach</p>
-          <h2>Each demo becomes a real client site by changing the business details.</h2>
+      <section class="site-shell grounds-contact" id="contact">
+        <div class="grounds-contact-copy">
+          <p class="eyebrow">Get In Touch</p>
+          <h2>Tell us what you are building.</h2>
+          <p>
+            Share the business, the goal, and what you need help shaping. This
+            form can later connect to email, a CRM, Google Forms, or a booking
+            tool.
+          </p>
         </div>
-        <div class="customize-grid">
-          <div>
-            <h3>Brand</h3>
-            <p>Replace logo, colors, typography, photography, and tone.</p>
-          </div>
-          <div>
-            <h3>Offer</h3>
-            <p>Swap in the client's services, products, menu, pricing, or packages.</p>
-          </div>
-          <div>
-            <h3>Proof</h3>
-            <p>Add reviews, licenses, team profiles, before-and-after work, or case results.</p>
-          </div>
-          <div>
-            <h3>Conversion</h3>
-            <p>Connect forms, booking tools, WhatsApp, maps, analytics, and email capture.</p>
-          </div>
-        </div>
+
+        <form class="lead-form grounds-form" aria-label="Grounds Studio contact form">
+          <h3>Project Inquiry</h3>
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Email or phone
+            <input type="text" placeholder="hello@example.com" />
+          </label>
+          <label>
+            What do you need?
+            <input type="text" placeholder="Branding, website, pitch deck, launch assets" />
+          </label>
+          <button class="button primary grounds-primary" type="button">Send Inquiry</button>
+        </form>
       </section>
     </main>
 
-    <footer class="site-shell footer">
-      <p>Static demo pack for business expo conversations.</p>
-      <a href="#demos">Back to demos</a>
+    <footer class="site-shell footer grounds-footer">
+      <p>Grounds Studio - strategy and design for brands that mean it.</p>
+      <a href="#contact">Start a Project</a>
     </footer>
   </body>
 </html>
