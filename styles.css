@@ -994,27 +994,31 @@ blockquote {
 }
 
 .grounds-page {
-  --grounds-cream: #f4eee2;
+  --font-display: "Garet", "Garet Heavy", "Avenir Next", "Montserrat", sans-serif;
+  --font-body: "Garet", "Garet Book", "Avenir Next", "Montserrat", sans-serif;
+  --grounds-cream: #f5ede0;
   --grounds-sand: #bfaa86;
-  --grounds-clay: #dc7950;
-  --grounds-ink: #30251d;
+  --grounds-clay: #e8784a;
+  --grounds-ink: #1f2521;
   --grounds-moss: #7e765f;
   --accent: var(--grounds-clay);
   --deep: var(--grounds-ink);
   --paper: var(--grounds-cream);
   --soft: #e7dccb;
-  color: var(--grounds-ink);
+  color: var(--grounds-cream);
+  background-color: #1f2521;
   background:
-    radial-gradient(circle at 14% 12%, rgba(220, 121, 80, 0.18), transparent 26rem),
-    radial-gradient(circle at 88% 18%, rgba(191, 170, 134, 0.38), transparent 30rem),
-    linear-gradient(135deg, #f3ede4 0%, #e6d9c4 48%, #d8c7ac 100%);
+    radial-gradient(circle at 14% 10%, rgba(232, 120, 74, 0.48), transparent 28rem),
+    radial-gradient(circle at 84% 18%, rgba(245, 237, 224, 0.22), transparent 32rem),
+    radial-gradient(circle at 44% 88%, rgba(232, 120, 74, 0.22), transparent 30rem),
+    linear-gradient(135deg, #1f2521 0%, #27342d 48%, #1f2521 100%);
 }
 
 .grounds-page::before {
   background-image:
-    linear-gradient(rgba(48, 37, 29, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(48, 37, 29, 0.035) 1px, transparent 1px),
-    repeating-linear-gradient(115deg, rgba(220, 121, 80, 0.045) 0 2px, transparent 2px 26px);
+    linear-gradient(rgba(245, 237, 224, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 237, 224, 0.045) 1px, transparent 1px),
+    repeating-linear-gradient(115deg, rgba(232, 120, 74, 0.08) 0 2px, transparent 2px 26px);
   background-size: 52px 52px, 52px 52px, 180px 180px;
 }
 
@@ -1032,7 +1036,7 @@ blockquote {
   width: min(46vw, 620px);
   height: min(46vw, 620px);
   background:
-    linear-gradient(135deg, rgba(191, 170, 134, 0.52), rgba(220, 121, 80, 0.34));
+    linear-gradient(135deg, rgba(245, 237, 224, 0.24), rgba(232, 120, 74, 0.44));
   clip-path: polygon(18% 0, 100% 0, 78% 100%, 0 100%);
   opacity: 0.42;
   pointer-events: none;
@@ -1048,7 +1052,7 @@ blockquote {
   display: inline-flex;
   align-items: center;
   gap: 0;
-  color: var(--grounds-ink);
+  color: var(--grounds-cream);
   font-weight: 950;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -1081,7 +1085,7 @@ blockquote {
 }
 
 .grounds-page .nav-links a {
-  color: rgba(48, 37, 29, 0.72);
+  color: rgba(245, 237, 224, 0.74);
 }
 
 .grounds-page .nav-links a:hover {
@@ -1121,7 +1125,7 @@ blockquote {
 .grounds-wordmark {
   width: fit-content;
   color: var(--grounds-clay);
-  font-family: "Eurostile", "Bank Gothic", "Avenir Next", var(--font-body);
+  font-family: "Garet", "Garet Heavy", "Eurostile", "Bank Gothic", var(--font-body);
   font-size: clamp(2rem, 5vw, 4.2rem);
   font-weight: 950;
   letter-spacing: 0.12em;
@@ -1132,11 +1136,12 @@ blockquote {
 .grounds-tagline {
   max-width: 640px;
   margin: 0;
-  color: var(--grounds-ink);
+  color: var(--grounds-cream);
   font-family: var(--font-display);
   font-size: clamp(2.1rem, 4.6vw, 4.75rem);
-  line-height: 0.98;
-  letter-spacing: -0.055em;
+  font-weight: 850;
+  line-height: 0.96;
+  letter-spacing: -0.06em;
 }
 
 .grounds-cta-row {
@@ -1152,17 +1157,18 @@ blockquote {
 }
 
 .grounds-secondary {
-  color: var(--grounds-ink);
-  background: rgba(241, 234, 223, 0.72);
-  border-color: rgba(48, 37, 29, 0.14);
+  color: var(--grounds-cream);
+  background: rgba(245, 237, 224, 0.08);
+  border-color: rgba(245, 237, 224, 0.22);
 }
 
 .grounds-hero-panel {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(145deg, rgba(241, 234, 223, 0.88), rgba(191, 170, 134, 0.48));
-  border: 1px solid rgba(255, 255, 255, 0.52);
+    radial-gradient(circle at top right, rgba(232, 120, 74, 0.16), transparent 18rem),
+    linear-gradient(145deg, rgba(245, 237, 224, 0.94), rgba(245, 237, 224, 0.76));
+  border: 1px solid rgba(245, 237, 224, 0.34);
   border-radius: 34px;
   box-shadow: 0 28px 90px rgba(48, 37, 29, 0.16);
   padding: clamp(28px, 4vw, 46px);
@@ -1185,8 +1191,9 @@ blockquote {
   position: relative;
   max-width: 100%;
   font-size: clamp(2.45rem, 3.7vw, 4.15rem);
-  line-height: 0.98;
-  letter-spacing: -0.045em;
+  font-weight: 850;
+  line-height: 0.96;
+  letter-spacing: -0.055em;
   text-wrap: balance;
 }
 
@@ -1220,15 +1227,15 @@ blockquote {
   margin-top: -42px;
   position: relative;
   z-index: 2;
-  background: rgba(48, 37, 29, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(245, 237, 224, 0.1);
+  border: 1px solid rgba(245, 237, 224, 0.16);
   border-radius: 999px;
   box-shadow: 0 22px 70px rgba(48, 37, 29, 0.18);
   padding: 16px;
 }
 
 .grounds-strip span {
-  color: rgba(241, 234, 223, 0.84);
+  color: rgba(245, 237, 224, 0.84);
   font-size: 0.86rem;
   font-weight: 950;
   text-align: center;
@@ -1237,28 +1244,33 @@ blockquote {
 .grounds-section .section-heading h2,
 .grounds-services h2,
 .grounds-contact h2 {
-  color: var(--grounds-ink);
+  color: var(--grounds-cream);
 }
 
 .grounds-section .section-heading p,
-.grounds-services p,
+.grounds-services > div > p,
 .grounds-contact p {
-  color: rgba(48, 37, 29, 0.72);
+  color: rgba(245, 237, 224, 0.72);
 }
 
 .grounds-canva-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.72fr) minmax(420px, 1fr);
-  gap: 28px;
-  align-items: center;
+  gap: 26px;
   margin-top: 54px;
   padding: clamp(24px, 4vw, 42px);
   background:
-    radial-gradient(circle at top left, rgba(220, 121, 80, 0.2), transparent 24rem),
-    linear-gradient(145deg, rgba(48, 37, 29, 0.94), rgba(112, 89, 62, 0.86));
-  border: 1px solid rgba(255, 255, 255, 0.16);
+    radial-gradient(circle at top left, rgba(232, 120, 74, 0.26), transparent 24rem),
+    linear-gradient(145deg, rgba(245, 237, 224, 0.12), rgba(31, 37, 33, 0.9));
+  border: 1px solid rgba(245, 237, 224, 0.16);
   border-radius: 36px;
   box-shadow: 0 28px 90px rgba(48, 37, 29, 0.18);
+}
+
+.grounds-canva-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: end;
 }
 
 .grounds-canva-copy h2,
@@ -1266,18 +1278,25 @@ blockquote {
   color: #fff8ef;
 }
 
+.grounds-canva-copy h2 {
+  max-width: 820px;
+}
+
 .grounds-canva-copy p {
+  max-width: 720px;
   color: rgba(255, 248, 239, 0.74);
-  margin-bottom: 24px;
 }
 
 .grounds-canva-embed {
   overflow: hidden;
   position: relative;
-  min-height: min(78vh, 760px);
-  background: #f4eee2;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 28px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 520px;
+  max-height: 82vh;
+  background: #f5ede0;
+  border: 1px solid rgba(245, 237, 224, 0.24);
+  border-radius: 32px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 24px 70px rgba(48, 37, 29, 0.24);
 }
 
@@ -1405,10 +1424,18 @@ blockquote {
   margin-block: 34px;
   padding: clamp(30px, 5vw, 56px);
   background:
-    linear-gradient(145deg, rgba(241, 234, 223, 0.88), rgba(191, 170, 134, 0.38));
-  border: 1px solid rgba(255, 255, 255, 0.48);
+    radial-gradient(circle at top left, rgba(232, 120, 74, 0.18), transparent 24rem),
+    linear-gradient(145deg, rgba(245, 237, 224, 0.12), rgba(245, 237, 224, 0.06));
+  border: 1px solid rgba(245, 237, 224, 0.16);
   border-radius: 36px;
   box-shadow: 0 24px 80px rgba(48, 37, 29, 0.14);
+}
+
+.grounds-services > div:first-child h2 {
+  max-width: 560px;
+  font-size: clamp(2.35rem, 4.2vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
 }
 
 .grounds-service-list {
@@ -1418,10 +1445,10 @@ blockquote {
 
 .grounds-service-list article {
   position: relative;
-  background: rgba(255, 248, 239, 0.72);
-  border: 1px solid rgba(48, 37, 29, 0.1);
+  background: rgba(245, 237, 224, 0.9);
+  border: 1px solid rgba(245, 237, 224, 0.18);
   border-radius: 24px;
-  padding: 22px;
+  padding: clamp(22px, 3vw, 32px);
 }
 
 .grounds-service-list span {
@@ -1430,11 +1457,23 @@ blockquote {
   letter-spacing: 0.14em;
 }
 
+.grounds-service-list h3 {
+  color: var(--grounds-ink);
+  font-size: clamp(1.55rem, 2.8vw, 2.35rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.grounds-service-list p {
+  color: rgba(31, 37, 33, 0.7);
+  font-weight: 650;
+}
+
 .grounds-contact {
   align-items: stretch;
   background:
-    radial-gradient(circle at top right, rgba(220, 121, 80, 0.22), transparent 24rem),
-    linear-gradient(145deg, rgba(48, 37, 29, 0.94), rgba(112, 89, 62, 0.88));
+    radial-gradient(circle at top right, rgba(232, 120, 74, 0.28), transparent 24rem),
+    linear-gradient(145deg, rgba(20, 24, 21, 0.94), rgba(31, 37, 33, 0.88));
 }
 
 .grounds-contact h2,
@@ -1447,11 +1486,11 @@ blockquote {
 }
 
 .grounds-form {
-  background: rgba(255, 248, 239, 0.92);
+  background: rgba(245, 237, 224, 0.94);
 }
 
 .grounds-footer {
-  color: rgba(48, 37, 29, 0.72);
+  color: rgba(245, 237, 224, 0.72);
 }
 
 .grounds-footer a {
@@ -2129,7 +2168,6 @@ blockquote {
 
 @media (max-width: 980px) {
   .grounds-hero,
-  .grounds-canva-section,
   .grounds-services,
   .grounds-contact {
     grid-template-columns: 1fr;
@@ -2154,7 +2192,7 @@ blockquote {
   }
 
   .grounds-canva-embed {
-    min-height: 380px;
+    min-height: 420px;
   }
 
   .grounds-work-card,
@@ -2221,8 +2259,13 @@ blockquote {
     margin-top: 34px;
   }
 
+  .grounds-canva-copy {
+    grid-template-columns: 1fr;
+  }
+
   .grounds-canva-embed {
-    min-height: 300px;
+    aspect-ratio: 4 / 3;
+    min-height: 320px;
     border-radius: 22px;
   }
 
