@@ -10,6 +10,7 @@ Static demo websites for showing potential small-business clients at a business 
 - `retail.html` - retail catalog demo
 - `clinic.html` - clinic / dental / wellness demo
 - `professional.html` - professional services demo
+- `grounds-studio-logo.png` - Grounds Studio logo used on the homepage
 
 ## GitHub Pages Setup
 
