@@ -8,8 +8,8 @@
       name="description"
       content="Grounds Studio creates strategy, identity, and website design for brands that mean it."
     />
-    <link rel="stylesheet" href="styles.css?v=grounds-hero-card-readable-8" />
-    <script src="script.js?v=grounds-hero-card-readable-8" defer></script>
+    <link rel="stylesheet" href="styles.css?v=grounds-formsubmit-canva-12" />
+    <script src="script.js?v=grounds-formsubmit-canva-12" defer></script>
   </head>
   <body class="grounds-page">
     <header class="grounds-hero-wrap">
@@ -93,7 +93,7 @@
           </div>
           <a
             class="button primary grounds-primary"
-            href="https://www.canva.com/design/DAHAuWGj2Es/Va2h1a1YbVB8xHzqirikOw/view?utm_content=DAHAuWGj2Es&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+            href="https://www.canva.com/design/DAHKUkD8mUM/ff1BPyAZ2dfxlM16P6AfAg/view?utm_content=DAHKUkD8mUM&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -105,8 +105,8 @@
           <iframe
             class="grounds-canva-frame"
             loading="lazy"
-            src="https://www.canva.com/design/DAHAuWGj2Es/Va2h1a1YbVB8xHzqirikOw/view?embed"
-            title="Van Visuals portfolio by kopeace"
+            src="https://www.canva.com/design/DAHKUkD8mUM/ff1BPyAZ2dfxlM16P6AfAg/view?embed"
+            title="Grounds Studio Portfolio and Value Deck"
             allowfullscreen
             allow="fullscreen"
           ></iframe>
@@ -191,26 +191,41 @@
           <h2>Tell us what you are building.</h2>
           <p>
             Share the business, the goal, and what you need help shaping. This
-            form can later connect to email, a CRM, Google Forms, or a booking
-            tool.
+            form sends the inquiry directly to the Grounds Studio inbox without
+            opening an email app.
           </p>
         </div>
 
-        <form class="lead-form grounds-form" aria-label="Grounds Studio contact form">
+        <form
+          class="lead-form grounds-form"
+          aria-label="Grounds Studio contact form"
+          data-recipient="francis.tome@yahoo.com.ph"
+          action="https://formsubmit.co/francis.tome@yahoo.com.ph"
+          method="POST"
+        >
           <h3>Project Inquiry</h3>
+          <input type="hidden" name="_subject" value="New Grounds Studio project inquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
           <label>
             Name
-            <input type="text" placeholder="Your name" />
+            <input name="name" type="text" placeholder="Your name" required />
           </label>
           <label>
             Email or phone
-            <input type="text" placeholder="hello@example.com" />
+            <input name="contact" type="text" placeholder="hello@example.com" required />
           </label>
           <label>
             What do you need?
-            <input type="text" placeholder="Branding, website, pitch deck, launch assets" />
+            <input
+              name="need"
+              type="text"
+              placeholder="Branding, website, pitch deck, launch assets"
+              required
+            />
           </label>
-          <button class="button primary grounds-primary" type="button">Send Inquiry</button>
+          <button class="button primary grounds-primary" type="submit">Send Inquiry</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
