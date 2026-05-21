@@ -1246,6 +1246,49 @@ blockquote {
   color: rgba(48, 37, 29, 0.72);
 }
 
+.grounds-canva-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(420px, 1fr);
+  gap: 28px;
+  align-items: center;
+  margin-top: 54px;
+  padding: clamp(24px, 4vw, 42px);
+  background:
+    radial-gradient(circle at top left, rgba(220, 121, 80, 0.2), transparent 24rem),
+    linear-gradient(145deg, rgba(48, 37, 29, 0.94), rgba(112, 89, 62, 0.86));
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 36px;
+  box-shadow: 0 28px 90px rgba(48, 37, 29, 0.18);
+}
+
+.grounds-canva-copy h2,
+.grounds-canva-copy .eyebrow {
+  color: #fff8ef;
+}
+
+.grounds-canva-copy p {
+  color: rgba(255, 248, 239, 0.74);
+  margin-bottom: 24px;
+}
+
+.grounds-canva-embed {
+  overflow: hidden;
+  position: relative;
+  min-height: min(78vh, 760px);
+  background: #f4eee2;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 28px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 24px 70px rgba(48, 37, 29, 0.24);
+}
+
+.grounds-canva-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .grounds-work-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -2086,6 +2129,7 @@ blockquote {
 
 @media (max-width: 980px) {
   .grounds-hero,
+  .grounds-canva-section,
   .grounds-services,
   .grounds-contact {
     grid-template-columns: 1fr;
@@ -2107,6 +2151,10 @@ blockquote {
 
   .grounds-work-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grounds-canva-embed {
+    min-height: 380px;
   }
 
   .grounds-work-card,
@@ -2167,6 +2215,15 @@ blockquote {
   .grounds-strip,
   .grounds-work-grid {
     grid-template-columns: 1fr;
+  }
+
+  .grounds-canva-section {
+    margin-top: 34px;
+  }
+
+  .grounds-canva-embed {
+    min-height: 300px;
+    border-radius: 22px;
   }
 
   .grounds-work-card {
