@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harbor Lane Home Goods</title>
+    <meta
+      name="description"
+      content="Demo website for a retail shop or product catalog business."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="business-page theme-retail">
+    <header class="site-shell">
+      <nav class="topbar business-nav" aria-label="Harbor Lane navigation">
+        <a class="brand-mark" href="retail.html">
+          <span class="brand-icon">H</span>
+          <span>Harbor Lane</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+        <div class="nav-links">
+          <a href="#catalog">Catalog</a>
+          <a href="#collection">Collection</a>
+          <a href="#visit">Visit</a>
+          <a class="nav-cta" href="#inquire">Ask About an Item</a>
+          <a href="index.html">All Demos</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="site-shell hero business-hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Home Goods And Gift Boutique</p>
+          <h1>Thoughtful home pieces for everyday living.</h1>
+          <p>
+            Browse curated decor, kitchenware, storage, and gifts online before
+            visiting the shop or asking about availability.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#catalog">Browse Catalog</a>
+            <a class="button ghost" href="#collection">New Arrivals</a>
+          </div>
+        </div>
+        <div class="hero-visual retail-visual reveal">
+          <div class="shelf shelf-one"></div>
+          <div class="shelf shelf-two"></div>
+          <div class="tag-card">
+            <span>Spring Edit</span>
+            <strong>36 new pieces</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-shell category-row" aria-label="Shop categories">
+        <a href="#catalog">Decor</a>
+        <a href="#catalog">Kitchen</a>
+        <a href="#catalog">Storage</a>
+        <a href="#catalog">Furniture</a>
+        <a href="#catalog">Gifts</a>
+      </section>
+
+      <section class="site-shell section-block" id="catalog">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Products</p>
+          <h2>A catalog website can start selling before full e-commerce is ready.</h2>
+          <p>
+            These product cards can link to checkout, WhatsApp, email inquiry,
+            or an in-store pickup request.
+          </p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image vase"></div>
+            <span>In stock</span>
+            <h3>Ceramic Ripple Vase</h3>
+            <p>$38 | Neutral handmade finish</p>
+            <button class="button small" type="button">Ask About Item</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image basket"></div>
+            <span>Low stock</span>
+            <h3>Woven Market Basket</h3>
+            <p>$42 | Storage or weekend errands</p>
+            <button class="button small" type="button">Ask About Item</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image lamp"></div>
+            <span>New arrival</span>
+            <h3>Harbor Table Lamp</h3>
+            <p>$96 | Warm ceramic base</p>
+            <button class="button small" type="button">Ask About Item</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image tray"></div>
+            <span>Best seller</span>
+            <h3>Acacia Serving Tray</h3>
+            <p>$34 | Entertaining essential</p>
+            <button class="button small" type="button">Ask About Item</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="site-shell split-panel linen-panel" id="collection">
+        <div>
+          <p class="eyebrow">This Month's Collection</p>
+          <h2>Small-space refreshes for apartments, offices, and cozy homes.</h2>
+          <p>
+            Seasonal collection pages give retailers an easy reason to promote
+            products without rebuilding the entire site.
+          </p>
+        </div>
+        <div class="collection-board">
+          <div>Warm woods</div>
+          <div>Textured ceramics</div>
+          <div>Giftable accents</div>
+          <div>Soft storage</div>
+        </div>
+      </section>
+
+      <section class="site-shell split-panel contact-panel" id="inquire">
+        <div id="visit">
+          <p class="eyebrow">Visit The Shop</p>
+          <h2>Browse online, buy in store, or message before you visit.</h2>
+          <p>82 Harbor Street, Old Town</p>
+          <p>Tue-Sat: 10 AM-6 PM | Sun: 11 AM-4 PM</p>
+          <p class="large-stat">Catalog today, e-commerce next</p>
+        </div>
+        <form class="lead-form" aria-label="Product inquiry form">
+          <h3>Ask About an Item</h3>
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Product
+            <input type="text" placeholder="Lamp, vase, basket, etc." />
+          </label>
+          <label>
+            Preferred contact
+            <input type="text" placeholder="Email, phone, or WhatsApp" />
+          </label>
+          <button class="button primary" type="button">Send Inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-shell footer">
+      <p>Demo website: retail or product catalog business.</p>
+      <a href="index.html">Back to all demos</a>
+    </footer>
+  </body>
+</html>

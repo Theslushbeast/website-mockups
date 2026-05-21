@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ember &amp; Grain Cafe</title>
+    <meta
+      name="description"
+      content="Demo website for a local restaurant or cafe."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="business-page theme-restaurant restaurant-showcase">
+    <header class="site-shell">
+      <nav class="topbar business-nav" aria-label="Ember and Grain navigation">
+        <a class="brand-mark" href="restaurant.html">
+          <span class="brand-icon">E</span>
+          <span>Ember &amp; Grain</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+        <div class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#story">Story</a>
+          <a href="#visit">Visit</a>
+          <a class="nav-cta" href="#reserve">Reserve</a>
+          <a href="index.html">All Demos</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="site-shell hero business-hero restaurant-hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Rustic Cafe And Roastery</p>
+          <h1>Slow mornings, warm bread, and coffee brewed with care.</h1>
+          <p>
+            Ember &amp; Grain is a cozy neighborhood cafe for early meetings,
+            long brunches, handmade pastries, and locally roasted coffee served
+            in a space that feels warm from the first step inside.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#menu">View Menu</a>
+            <a class="button ghost" href="#reserve">Reserve a Table</a>
+          </div>
+        </div>
+        <div class="hero-visual cafe-visual reveal">
+          <div class="coffee-scene" aria-hidden="true">
+            <div class="steam steam-one"></div>
+            <div class="steam steam-two"></div>
+            <div class="steam steam-three"></div>
+            <div class="cup">
+              <div class="latte-art"></div>
+            </div>
+            <div class="saucer"></div>
+            <div class="coffee-beans">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="plate-card cafe-special-card">
+            <span>Morning Special</span>
+            <strong>Brown butter cinnamon latte</strong>
+            <small>with a toasted oat scone</small>
+          </div>
+          <div class="roast-badge">Locally roasted beans</div>
+        </div>
+      </section>
+
+      <section class="site-shell logo-row rustic-highlight-row" aria-label="Restaurant highlights">
+        <span>Open 7 AM</span>
+        <span>Single-origin coffee</span>
+        <span>Fresh pastries</span>
+        <span>Weekend brunch</span>
+        <span>Office catering</span>
+      </section>
+
+      <section class="site-shell section-block" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Popular This Week</p>
+          <h2>A homepage menu that feels like you can smell the coffee.</h2>
+          <p>
+            A real cafe could replace these cards with bestsellers, seasonal
+            dishes, high-margin drinks, catering trays, or limited-time offers.
+          </p>
+        </div>
+        <div class="card-grid three rustic-menu-grid">
+          <article class="item-card rustic-menu-card">
+            <div class="food-swatch swatch-one"></div>
+            <span class="menu-kicker">Brunch favorite</span>
+            <h3>Maple Butter French Toast</h3>
+            <p>Thick brioche, roasted bananas, toasted pecans, and maple cream.</p>
+            <strong>$12</strong>
+          </article>
+          <article class="item-card rustic-menu-card">
+            <div class="food-swatch swatch-two"></div>
+            <span class="menu-kicker">Lunch regular</span>
+            <h3>Harvest Chicken Bowl</h3>
+            <p>Grilled chicken, grains, greens, squash, pickled onion, and tahini.</p>
+            <strong>$15</strong>
+          </article>
+          <article class="item-card rustic-menu-card">
+            <div class="food-swatch swatch-three"></div>
+            <span class="menu-kicker">Signature drink</span>
+            <h3>Brown Sugar Cold Brew</h3>
+            <p>Slow-steeped coffee with oat milk, vanilla, and brown sugar foam.</p>
+            <strong>$6</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="site-shell split-panel warm-panel rustic-story-panel" id="story">
+        <div>
+          <p class="eyebrow">Made Fresh, Served Local</p>
+          <h2>A cozy room, a serious kitchen, and a website that sells both.</h2>
+          <p>
+            Ember &amp; Grain is built around the moments that bring people in:
+            a quiet table before work, a weekend brunch with friends, or a
+            catered tray that makes the office feel a little less office-like.
+          </p>
+        </div>
+        <div class="feature-list rustic-feature-list">
+          <div>
+            <strong>Daily specials board</strong>
+            <span>Update high-margin items, seasonal drinks, and sold-out notices.</span>
+          </div>
+          <div>
+            <strong>Pickup and reservation CTAs</strong>
+            <span>Connect to Toast, Square, Shopify, WhatsApp, or a booking tool.</span>
+          </div>
+          <div>
+            <strong>Catering inquiries</strong>
+            <span>Office lunches and private events become qualified leads.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-shell section-block ambience-section">
+        <div class="section-heading">
+          <p class="eyebrow">The Atmosphere</p>
+          <h2>Rustic does not have to mean outdated.</h2>
+          <p>
+            The visual style can feel handcrafted and local while the site still
+            uses modern layout, responsive design, smooth motion, and strong
+            conversion paths.
+          </p>
+        </div>
+        <div class="ambience-grid">
+          <article>
+            <span>01</span>
+            <h3>Warm Materials</h3>
+            <p>Wood-grain textures, espresso tones, soft cream panels, and amber lighting.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Modern Motion</h3>
+            <p>CSS-only steam, layered gradients, hover depth, and subtle reveal animation.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Clear Conversion</h3>
+            <p>Visitors can view the menu, reserve a table, order pickup, or ask about catering.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="site-shell section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Guest Proof</p>
+          <h2>Reviews that build trust before customers arrive.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure>
+            <blockquote>"The kind of cafe you keep finding excuses to revisit."</blockquote>
+            <figcaption>Mariel R., local customer</figcaption>
+          </figure>
+          <figure>
+            <blockquote>"Their catering saved our Monday team meeting."</blockquote>
+            <figcaption>Jordan P., office manager</figcaption>
+          </figure>
+          <figure>
+            <blockquote>"Fast pickup, thoughtful food, and genuinely warm service."</blockquote>
+            <figcaption>Sofia M., neighborhood regular</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="site-shell split-panel contact-panel rustic-reserve-panel" id="reserve">
+        <div id="visit">
+          <p class="eyebrow">Plan Your Visit</p>
+          <h2>Pull up a chair. We open daily at 7 AM.</h2>
+          <p>124 Market Lane, Downtown</p>
+          <p>Mon-Fri: 7 AM-8 PM | Sat-Sun: 8 AM-9 PM</p>
+          <p class="large-stat">4.8 star average rating</p>
+        </div>
+        <form class="lead-form" aria-label="Reservation request form">
+          <h3>Reserve or ask about catering</h3>
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Party size or catering need
+            <input type="text" placeholder="4 guests, office lunch, etc." />
+          </label>
+          <label>
+            Preferred date
+            <input type="text" placeholder="Tomorrow at 12:30 PM" />
+          </label>
+          <button class="button primary" type="button">Send Request</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-shell footer">
+      <p>Demo website: restaurant or cafe.</p>
+      <a href="index.html">Back to all demos</a>
+    </footer>
+  </body>
+</html>

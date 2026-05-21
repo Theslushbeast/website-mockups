@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stonebridge Build Co.</title>
+    <meta
+      name="description"
+      content="Demo website for a contractor or construction company."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="business-page theme-construction">
+    <header class="site-shell">
+      <nav class="topbar business-nav" aria-label="Stonebridge navigation">
+        <a class="brand-mark" href="construction.html">
+          <span class="brand-icon">S</span>
+          <span>Stonebridge Build Co.</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#process">Process</a>
+          <a class="nav-cta" href="#quote">Get Quote</a>
+          <a href="index.html">All Demos</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="site-shell hero business-hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Licensed General Contractor</p>
+          <h1>Quality construction without the guesswork.</h1>
+          <p>
+            Renovations, repairs, and commercial improvements handled by a
+            trusted local crew with clear timelines and practical estimates.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#quote">Request a Quote</a>
+            <a class="button ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+        <div class="hero-visual build-visual reveal">
+          <div class="blueprint-card">
+            <span>Current Pipeline</span>
+            <strong>18 active projects</strong>
+            <small>Residential | Commercial | Repairs</small>
+          </div>
+          <div class="beam beam-one"></div>
+          <div class="beam beam-two"></div>
+        </div>
+      </section>
+
+      <section class="site-shell stats-strip">
+        <div><strong>14+</strong><span>Years experience</span></div>
+        <div><strong>280+</strong><span>Projects completed</span></div>
+        <div><strong>Licensed</strong><span>Insured local crew</span></div>
+        <div><strong>48 hr</strong><span>Estimate follow-up</span></div>
+      </section>
+
+      <section class="site-shell section-block" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Services We Offer</p>
+          <h2>Show prospects exactly what jobs you want more of.</h2>
+        </div>
+        <div class="card-grid three">
+          <article class="service-card">
+            <h3>Home Renovations</h3>
+            <p>Kitchens, bathrooms, additions, flooring, painting, and punch-list work.</p>
+          </article>
+          <article class="service-card">
+            <h3>Commercial Fit-Outs</h3>
+            <p>Retail, office, clinic, and restaurant improvements with coordinated scheduling.</p>
+          </article>
+          <article class="service-card">
+            <h3>Repairs &amp; Maintenance</h3>
+            <p>Property repairs, tenant turnover, water damage, exterior work, and inspections.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="site-shell section-block" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Recent Projects</p>
+          <h2>Before-and-after proof makes the phone ring.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image kitchen"></div>
+            <h3>Kitchen Refresh</h3>
+            <p>Cabinet refinishing, tile backsplash, lighting, and new counters.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-image storefront"></div>
+            <h3>Storefront Build-Out</h3>
+            <p>Framing, flooring, fixtures, paint, and final punch-list coordination.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-image deck"></div>
+            <h3>Outdoor Deck</h3>
+            <p>Weather-resistant materials, new stairs, railings, and finish carpentry.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="site-shell split-panel steel-panel" id="process">
+        <div>
+          <p class="eyebrow">Our Simple Process</p>
+          <h2>Clients feel safer when they know what happens next.</h2>
+          <p>
+            This section answers the biggest contractor concern: "Will this be
+            organized?" Clear steps turn uncertainty into a quote request.
+          </p>
+        </div>
+        <div class="timeline">
+          <div><span>01</span><strong>Site visit</strong><p>Review goals, scope, constraints, and timeline.</p></div>
+          <div><span>02</span><strong>Written estimate</strong><p>Line-item scope with schedule and assumptions.</p></div>
+          <div><span>03</span><strong>Build phase</strong><p>Coordinated crew, updates, and clean work areas.</p></div>
+          <div><span>04</span><strong>Walkthrough</strong><p>Final review, punch-list, and project closeout.</p></div>
+        </div>
+      </section>
+
+      <section class="site-shell split-panel contact-panel" id="quote">
+        <div>
+          <p class="eyebrow">Free Estimate</p>
+          <h2>Turn project interest into qualified leads.</h2>
+          <p>
+            A contractor can use this form to collect job type, location,
+            urgency, photos, and budget range before calling the prospect.
+          </p>
+          <p class="large-stat">Response within 1 business day</p>
+        </div>
+        <form class="lead-form" aria-label="Construction quote form">
+          <h3>Request a Quote</h3>
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Project type
+            <input type="text" placeholder="Kitchen, roof, commercial fit-out" />
+          </label>
+          <label>
+            Timeline
+            <input type="text" placeholder="ASAP, this month, planning ahead" />
+          </label>
+          <button class="button primary" type="button">Send Project Details</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-shell footer">
+      <p>Demo website: construction or contractor business.</p>
+      <a href="index.html">Back to all demos</a>
+    </footer>
+  </body>
+</html>
