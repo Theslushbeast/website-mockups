@@ -1101,17 +1101,19 @@ blockquote {
 
 .grounds-hero-copy {
   display: grid;
-  gap: 28px;
+  gap: 24px;
+  align-content: center;
 }
 
 .grounds-logo-lockup {
   display: block;
-  width: min(760px, 100%);
+  width: min(440px, 100%);
 }
 
 .grounds-logo-image {
   display: block;
-  width: 100%;
+  width: min(440px, 100%);
+  max-width: 100%;
   height: auto;
   filter: drop-shadow(0 24px 46px rgba(48, 37, 29, 0.1));
 }
@@ -1128,11 +1130,11 @@ blockquote {
 }
 
 .grounds-tagline {
-  max-width: 720px;
+  max-width: 640px;
   margin: 0;
   color: var(--grounds-ink);
   font-family: var(--font-display);
-  font-size: clamp(2.15rem, 5vw, 5.25rem);
+  font-size: clamp(2.1rem, 4.6vw, 4.75rem);
   line-height: 0.98;
   letter-spacing: -0.055em;
 }
